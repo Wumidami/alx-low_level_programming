@@ -1,23 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - program that prints the alphabet in lowercase and upper case
- *
- * Return: Always 0.
+ * main - Entry point
+ * author: sammy
+ * Return: Always 0 (Success/correct)
  */
-
 int main(void)
 {
-	char letter;
+	int sammy;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-
-	{
-	if (letter != 'e' && letter != 'q')
-	putchar(letter);
+	for (sammy = 0; sammy < 10; sammy++)
+	{	
+	printf("%d", sammy);
 	}
 
-	putchar('\n');
+	printf("\n");
 
 	return (0);
 }
