@@ -1,17 +1,33 @@
 #include <stdio.h>
+
+
 /**
-* main - program compilation begins from main
-* Description: Program to print all possible combinations of numbers
-* author: wumidami
-* Return: 0 means success
-*/
-	int main(void)
+ * main -prints all possible different combinations of two digits
+ * in ascending order, separated by a comma followed by a space.
+ *
+ * Return: Always 0.
+ *
+ */
+
+int main(void)
 {
-	int a, b;
+	int digit1, digit2;
 
-	for (a = 48; a < = 57; a++)
+	for (digit1 = 0; digit1 < 9; digit1++)
 	{
+		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
+		{
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
 
+			if (digit1 == 8 && digit2 == 9)
+			continue;
+
+
+			putchar(',');
+			putchar(' ');
+		}
+	}
 		for (b = 49; b < = 57; b++)
 
 		{
