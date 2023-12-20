@@ -2,26 +2,26 @@
 
 
 /**
-  * main - the main printing funtion
-  * less than 4000000.
-  * Return: 0.
+  * main - sum up even fibonacci up tp 4million
+  *
+  * Return: (0)
   */
 
 
 int main(void)
 {
-	int i = 0;
-	long j = 1, k = 2, sum = k;
+	long int i, x = 1, y = 2, sum = 0, tsum = 0;
 
-
-	while (k + j < 4000000)
+	for (i = 0; i < 49; i++)
 	{
-		k += j;
-		if (k % 2 == 0)
-		sum += k;
-		j = k - j;
-		++i;
+		if ((y % 2 == 0) && (y <= 4000000))
+		{
+			tsum = tsum + y;
+		}
+		sum = x + y;
+		x = y;
+		y = sum;
 	}
-	printf("%ld", sum);
+
 	return (0);
 }
