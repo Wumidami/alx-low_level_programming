@@ -2,7 +2,7 @@
 
 
 /**
-  * main - prints the first 52 fib
+  * main - prints the first 50 fib
   * Return: 0.
   */
 
