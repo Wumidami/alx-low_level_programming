@@ -1,27 +1,19 @@
 #include <stdio.h>
 
+int main(void) {
+    unsigned long long a = 1, b = 2, sum = 0, next;
 
-/**
-  * main - the main printing funtion
-  * less than 4000000.
-  * Return: 0.
-  */
+    while (b <= 4000000) {
+        if (b % 2 == 0) {
+            sum += b;
+        }
 
+        next = a + b;
+        a = b;
+        b = next;
+    }
 
-int main(void)
-{
-	int i = 0;
-	long j = 1, k = 2, sum = k;
+    printf("%llu\n", sum);
 
-
-	while (k + j < 4000000)
-	{
-		k += j;
-		if (k % 2 == 0)
-		sum += k;
-		j = k - j;
-		++i;
-	}
-	printf("%ld", sum);
-	return (0);
+    return 0;
 }
