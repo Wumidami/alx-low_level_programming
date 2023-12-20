@@ -3,30 +3,30 @@
 
 /**
   * main - prints the first 50 fib
-  * Return: 0.
+  * Return: (0)
   */
 
 
 int main(void)
 {
-	int i = 0;
-	long j = 1, k = 2;
+	int i;
+	long int fibonacci[50];
+	
+	fibonacci[0] = 1;
+	fibonacci[1] = 2;
+	printf("%ld,%ld, ", fibonacci[0], fibonacci[1]);
 
-
-	while (i < 50)
+	for (i = 2; i < 50; i++)
 	{
-	if (i == 0)
-	printf("%ld", j);
-	else if (i == 1)
-	printf(", %ld", k);
-	else
-	{
-	k += j;
-	j = k - j;
-	printf(", %ld", k);
+		fibanacci[i] = fibonacci[i - 1] + fibonacci[i -2];
+		if (i ==49)
+		{
+			printf("%ld\n", fibonacci[i]);
+		}
+		else
+		{
+			printf("%ld, 'I', fibonacci[i]");
+		}
 	}
-	++i;
-	}
-	printf("\n");
-	return (0);
+	return (0)
 }
