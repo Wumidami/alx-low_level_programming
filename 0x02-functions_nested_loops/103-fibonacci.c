@@ -7,7 +7,6 @@
   * Return: (0)
   */
 
-
 int main(void)
 {
 	long int i, x = 1, y = 2, sum = 0, tsum = 0;
